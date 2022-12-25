@@ -17,7 +17,9 @@ mpg_lm = lm(mpg ~ ., data=mechaCar_mpg_df)
 summary(mpg_lm)
 
 
+
 # PART 2: Summary Statistics on Suspension Coils
+
 # Import and read Suspension_Coil.csv as a dataframe and check data
 suspension_Coil_df <- read.csv(file='Suspension_Coil.csv', check.names=F, stringsAsFactors = F)
 head(suspension_Coil_df)
@@ -33,6 +35,19 @@ total_summary
 lot_summary <- suspension_Coil_df %>% group_by(Manufacturing_Lot) %>% summarize(Mean = mean(PSI), Median = median(PSI), Variance = var(PSI), SD = sd(PSI), .groups = 'keep') 
 lot_summary
 
+
+
 # PART 3: T-Test on Suspension Coils
 
-# PART 4: Design a Study Comparing the MechCar to the Competition
+# Use t.test() to determine whether PSI across all lots is different from pop mean of 1500/in^2
+# Write 3 additional scripts using t.test() and subset() argument to determine if PSI/lot is statistiacally different
+t.test(suspension_Coil_df$PSI, mu=1500)
+
+# t.test() lot 1
+t.test(subset(suspension_Coil_df$PSI, suspension_Coil_df$Manufacturing_Lot == "Lot1"), mu=1500)
+
+# t.test() lot 2
+t.test(subset(suspension_Coil_df$PSI, suspension_Coil_df$Manufacturing_Lot == "Lot2"), mu=1500)
+
+# t.test() lot 3
+t.test(subset(suspension_Coil_df$PSI, suspension_Coil_df$Manufacturing_Lot == "Lot3"), mu=1500)
