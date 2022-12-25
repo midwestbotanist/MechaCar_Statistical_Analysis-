@@ -1,1 +1,57 @@
 # MechaCar_Statistical_Analysis-
+## Background of Project:
+The MechaCar is the newest prototype developed by AutosRU. Unfortunately, production troubles have negatively impacted progress for the manufacturing team. This analysis is being performed to gain insight from the production data gathered so far to help help improve progress. 
+
+In order to complete this analysis, R has been selected to analyze the data through the following steps:
+
+1) Linear Regression to Predict MPG
+2) Summary Statistics on Suspension Coils
+3) T-Tests on Suspension Coils
+4) Study Design: MechaCar vs Competition
+
+
+## Linear Regression to Predict MPG
+### Below is the code to read in the mpg data:
+
+![MechaCar_mpg_df_IMPORT](https://user-images.githubusercontent.com/101941048/209418568-9e903a77-ed0a-4555-aaa6-3758191e797b.png)
+
+### Below is the code used to find the linear regression and the results: 
+
+![lm_function_all_variables_MechCar_mpg_df](https://user-images.githubusercontent.com/101941048/209454837-466d351d-b7e5-427f-a10c-5b040b938712.png)
+
+### Result Analysis:
+The vehicle length has a Pr(>|t|) value of 2.60e-12 and the ground clearance has a Pr(>|t|) value of 5.21e08. As a p-value of 0.05 or less is considered to be the general standard of significance, both vehicle length and ground clearance can be considered significant in the non-random amount of variance they provideto the mpg values. This also means that the vehicle weight, spoiler angle, and AWD do not have significant p-values and thus cannot be considered to provide non-random amounts of variance.
+
+The p-value is well below the assumed significance level of 0.05%, being at 5.35e-11, and thus allowing the null hypothesis to be rejected and say that the slope of the linear model is not 0. 
+
+The r-squared value is 0.71, which means that the mpg of the MechaCar prototypes can effectively predict mpg ~71% of the time. As many other factors can affect overall mpg (e.g. city vs highway driving, climate, driving style, etc...), a 71% prediction is an effective amount, but should be compared to the generally accepted industry standard r-squared value to fully determine the effectiveness found by this number. 
+
+## Summary Statistics on Suspension Coils
+
+short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
+
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+
+## T-Tests on Suspension Coils
+
+
+summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+
+## Study Design: MechaCar vs Competition
+Purpose:
+Cars are a ubiquitous part of everyday society here in the United States. Many workers commute by car everyday, parents drop off/pickup their children, among many others reasons people need to drive. Car technology has advanced much since Henry Ford's Model T graced the streets. Consumers are continually demanding improvement in city/highway mpg, safety features, luxury features (heated seats/steerings wheels, bluetooth connection, gps, etc...), horse power, etc... These improvements often coincide with higher purchase/insurance costs, as well as higher maintenance costs. As consumers come from all backgrounds and price points, it is important for AutosRU to be competitive both on the physical aspects of the MechaCar as well as for the overall costs. 
+
+
+In your description, address the following questions:
+
+What metric or metrics are you going to test?
+
+What is the null hypothesis or alternative hypothesis?
+
+What statistical test would you use to test the hypothesis? And why?
+
+What data is needed to run the statistical test?
+
+## Resources:
+- dyplr and magrittr library for %>%: https://stackoverflow.com/questions/30248583/error-could-not-find-function
+- lm() function code: http://www.sthda.com/english/articles/40-regression-analysis/168-multiple-linear-regression-in-r/
