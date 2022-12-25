@@ -65,8 +65,8 @@ Cars are a ubiquitous part of everyday society here in the United States. Many w
 For this study, the targeted group will be consumers who have safety as their number 1 priority, followed by great mpg overall (city and highway combined). 
 
 ### Null/Alternative Hypotheses:
-Null: There is no statistical difference between safety and mpg performance for MechaCar prototypes vs the competition.
-Alternative: There is a statistical difference between safety and mpg performance for MechaCar prototypes vs the competition.
+- Null: There is no statistical difference between safety and mpg performance for MechaCar prototypes vs the competition.
+- Alternative: There is a statistical difference between safety and mpg performance for MechaCar prototypes vs the competition.
 
 ### Statistical Tests to Run:
 The mpg data has already been analyzed in this current analysis, however, in the current analysis mpg was the focus. This new study makes safety the prime focus. This means that safety data is needed to be gathered for the MechaCar protypes (via random sampling) and then the following tests should be run:
