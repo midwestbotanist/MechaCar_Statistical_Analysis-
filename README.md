@@ -27,10 +27,13 @@ The p-value is well below the assumed significance level of 0.05%, being at 5.35
 The r-squared value is 0.71, which means that the mpg of the MechaCar prototypes can effectively predict mpg ~71% of the time. As many other factors can affect overall mpg (e.g. city vs highway driving, climate, driving style, etc...), a 71% prediction is an effective amount, but should be compared to the generally accepted industry standard r-squared value to fully determine the effectiveness found by this number. 
 
 ## Summary Statistics on Suspension Coils
+### Below are the Lot Summary results:
+![lot_summary_supension_coil_PSI](https://user-images.githubusercontent.com/101941048/209455439-3c4f66e2-3c6f-4389-8d44-25ebf14eb2aa.png)
 
-short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
+### Below are the Total Summary results:
+![total_summary_suspension_coil_PSI](https://user-images.githubusercontent.com/101941048/209455442-e32afb50-8497-4965-ae03-5db34be88252.png)
 
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+According to design specs, the allowable PSI variance for suspension coils is 100 lbs/in^2. Per the total summary results for all lots combined, the variance is at 62, which indicates that overall the design specs are being met. However, this doesn't hold up when looking at the individual lots. Lots 1 and 2 both vary little and fall within the design specs, but lot 3 has a variance of 170 - well exceeding the acceptable variance amount. When compared against competing car brands, this is a necessary area to address.
 
 ## T-Tests on Suspension Coils
 
