@@ -58,19 +58,21 @@ The population mean is 1,500 lbs/in^2 for suspension coil PSI. This test is perf
 As was seen when collecting the summary statistics, the t-test results for all combined data vs individual lots differs. For the combined data the p-value is 0.60, far higher than 0.05 and subsequently failing to reject the null hypothesis. When broken down by lot number, lot 1 has a p-value of 1 and lot 2 has a p-value of 0.61 - thus both fail to reject the null hypothesis. However, lot 3 has a p-value of 0.04 and this lot alone is able to reject the null hypothesis.
 
 ## Study Design: MechaCar vs Competition
-Purpose:
-Cars are a ubiquitous part of everyday society here in the United States. Many workers commute by car everyday, parents drop off/pickup their children, among many others reasons people need to drive. Car technology has advanced much since Henry Ford's Model T graced the streets. Consumers are continually demanding improvement in city/highway mpg, safety features, luxury features (heated seats/steerings wheels, bluetooth connection, gps, etc...), horse power, etc... These improvements often coincide with higher purchase/insurance costs, as well as higher maintenance costs. As consumers come from all backgrounds and price points, it is important for AutosRU to be competitive both on the physical aspects of the MechaCar as well as for the overall costs. 
+### Purpose of Future Study:
+Cars are a ubiquitous part of everyday society here in the United States. Many workers commute by car everyday, parents drop off/pickup their children, among many others reasons people need to drive. Car technology has advanced much since Henry Ford's Model T graced the streets. Consumers are continually demanding improvement in city/highway mpg, safety features, luxury features (heated seats/steerings wheels, bluetooth connection, gps, etc...), etc... These improvements often coincide with higher purchase costs, as well as higher maintenance/insurance costs. As consumers come from all backgrounds and price points, it is important for AutosRU to be competitive both on the physical aspects of the MechaCar as well as for the overall costs based upon the targeted market group of consumers (e.g. middle class, "soccer moms", wealthy clientele, etc...) as this also determines who the competing brands are. 
 
+### Target Group:
+For this study, the targeted group will be consumers who have safety as their number 1 priority, followed by great mpg overall (city and highway combined). 
 
-In your description, address the following questions:
+### Null/Alternative Hypotheses:
+Null: There is no statistical difference between safety and mpg performance for MechaCar prototypes vs the competition.
+Alternative: There is a statistical difference between safety and mpg performance for MechaCar prototypes vs the competition.
 
-What metric or metrics are you going to test?
+### Statistical Tests to Run:
+The mpg data has already been analyzed in this current analysis, however, in the current analysis mpg was the focus. This new study makes safety the prime focus. This means that safety data is needed to be gathered for the MechaCar protypes (via random sampling) and then the following tests should be run:
 
-What is the null hypothesis or alternative hypothesis?
-
-What statistical test would you use to test the hypothesis? And why?
-
-What data is needed to run the statistical test?
+- Multiple Linear Regression: this is to see which variables can predict the safety of the prototypes
+- Summary Statistics: it is important to see if safety standards are being met for all lots rather than just when lots are combined
 
 ## Resources:
 - dyplr and magrittr library for %>%: https://stackoverflow.com/questions/30248583/error-could-not-find-function
