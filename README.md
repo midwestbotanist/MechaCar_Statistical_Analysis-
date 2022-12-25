@@ -39,6 +39,7 @@ The data used in this analysis has been gathered from multiple production lots. 
 ### Total Summary results:
 ![total_summary_suspension_coil_PSI](https://user-images.githubusercontent.com/101941048/209455442-e32afb50-8497-4965-ae03-5db34be88252.png)
 
+### Result Analysis:
 According to design specs, the allowable PSI variance for suspension coils is 100 lbs/in^2. Per the total summary results for all lots combined, the variance is at 62, which indicates that overall the design specs are being met. However, this doesn't hold up when looking at the individual lots. Lots 1 and 2 both vary little and fall within the design specs, but lot 3 has a variance of 170 - well exceeding the acceptable variance amount. When compared against competing car brands, this is a necessary area to address.
 
 ## T-Tests on Suspension Coils
@@ -53,6 +54,7 @@ The population mean is 1,500 lbs/in^2 for suspension coil PSI. This test is perf
 ![t-test_lot_2](https://user-images.githubusercontent.com/101941048/209455920-4a1c3677-26f0-4fb4-a81e-80541cd62d09.png)
 ![t-test_lot_3](https://user-images.githubusercontent.com/101941048/209455923-32c7b3aa-46c4-468a-b957-3c85552b974c.png)
 
+# Result Analysis:
 As was seen when collecting the summary statistics, the t-test results for all combined data vs individual lots differs. For the combined data the p-value is 0.60, far higher than 0.05 and subsequently failing to reject the null hypothesis. When broken down by lot number, lot 1 has a p-value of 1 and lot 2 has a p-value of 0.61 - thus both fail to reject the null hypothesis. However, lot 3 has a p-value of 0.04 and this lot alone is able to reject the null hypothesis.
 
 ## Study Design: MechaCar vs Competition
